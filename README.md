@@ -30,9 +30,11 @@ sudo apt-get update
 sudo apt-get install nodejs -y
 ```
 
-## Apprendix 
+## Apprendix 🗄️
 
 [Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
+
+## Logo so pretty ✨✨
 
 ![Logo](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png)
 
