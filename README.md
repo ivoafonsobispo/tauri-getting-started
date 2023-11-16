@@ -6,13 +6,13 @@ Getting started with **Tauri** 🦀🦀🦀🦀🦀🦀 hand's on 👐
 
 ## Installation Steps 🛠️
 
-- **Rust**
+1. **Rust**
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
     
-- **NodeJS**
+2. **NodeJS**
 
 ```bash
 sudo apt-get update
