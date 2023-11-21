@@ -31,7 +31,6 @@ npm install --save-dev @tauri-apps/cli
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-- Select "1) Proceed with installation (default)" by typping 1
     
 3. **NodeJS**
 
@@ -70,7 +69,7 @@ npm run tauri dev
 
 [Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
 
-## Logo so pretty ✨✨
+## Pretty ✨✨
 
 ![Logo](https://tauri.app/img/social.png)
 
