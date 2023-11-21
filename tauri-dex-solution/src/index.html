@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tauri App</title>
+    <script type="module" src="/main.js" defer></script>
+    <style>
+      .logo.vanilla:hover {
+        filter: drop-shadow(0 0 2em #ffe21c);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Tauri-Dex!</h1>
+      <p>Type the name of your favorite pokemon</p>
+
+      <form class="row" id="pokemon-form">
+        <input id="pokemon-name-input" placeholder="Enter the name..." />
+        <button type="submit">I choose you!</button>
+      </form>
+
+      <p id="pokemon-msg"></p>
+
+      <div class="row">
+        <div class="column information-container">
+          <ul>
+            <li>Name: <span id="pokemon-name"></span></li>
+            <li>Weight: <span id="pokemon-weight"></span></li>
+            <li>Height: <span id="pokemon-height"></span></li>
+          </ul>
+          
+        </div>
+        <img id="pokemon-img" src="" alt="pokemon img" width="200"/>
+        
+        
+      </div>
+    </div>
+  </body>
+</html>
