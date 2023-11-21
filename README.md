@@ -11,6 +11,7 @@ Getting started with **Tauri** 🦀🦀🦀🦀🦀🦀 hand's on 👐
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
+- Select "1) Proceed with installation (default)" by typping 1
     
 2. **NodeJS**
 
@@ -29,6 +30,15 @@ echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.co
 sudo apt-get update
 sudo apt-get install nodejs -y
 ```
+
+## Tutorial Steps 🪜
+
+1. **Download the base project**
+
+```bash
+git clone https://github.com/ivoafonsobispo/tauri-getting-started.git
+```
+
 
 ## Apprendix 🗄️
 
