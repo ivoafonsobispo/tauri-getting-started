@@ -69,7 +69,7 @@ npm run tauri dev
 
 [😶‍🌫️ Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
 
-## Apprendix 🗄️
+## Appendix 🗄️
 
 🧐 [Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
 
