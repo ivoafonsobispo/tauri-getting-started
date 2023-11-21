@@ -65,9 +65,13 @@ npm install
 npm run tauri dev
 ```
 
+3. **Try to solve the ordered steps in the base project **
+[😶‍🌫️ Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
+
 ## Apprendix 🗄️
 
 🧐 [Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
+
 🥳 [Solution](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-solution)
 
 ## Pretty ✨✨
