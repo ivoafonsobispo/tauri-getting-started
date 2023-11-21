@@ -69,9 +69,7 @@ npm run tauri dev
 
 😶‍🌫️ [Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
 
-4. **Build Project**
-
-4.1 **Linux**
+4. **Build Project Linux**
 
 ```bash
 npm run tauri build
@@ -82,7 +80,7 @@ cd src-tauri/target/release/
 ./tauri-dex
 ```
 
-4.2 **Windows**
+5. **Build Project Windows**
 
 ```bash
 sudo apt-get install mingw-w64
