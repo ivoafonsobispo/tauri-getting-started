@@ -2,17 +2,11 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use reqwest;
-use serde::{Deserialize, Serialize};
+use serde::{Deserialize};
 
-#[derive(Debug, Deserialize)]
-struct Pokemon {
-    id: u32,
-    name: String,
-    weight: u32,
-    height: u32,
-    // Add other fields you might need from the response
-    // For example, you might want to extract the name: String,
-}
+
+// 2. Add the Pokemon structure
+
 
 #[tauri::command]
 async fn get_pokemon(name: &str) -> Result<String, String> {
@@ -22,25 +16,15 @@ async fn get_pokemon(name: &str) -> Result<String, String> {
     // Make the GET request
     match reqwest::get(&url).await {
         Ok(response) => {
+
             if response.status().is_success() {
-                // If the request was successful, get the response body as text
-                let body = response.text().await.unwrap();
 
-                // Parse the JSON body
-                match serde_json::from_str::<Pokemon>(&body) {
-                    Ok(pokemon) => {
-                        // Create a Pokemon Object
-                        let pokemon_object = Pokemon {
-                            id: pokemon.id,
-                            name: pokemon.name,
-                            weight: pokemon.weight,
-                            height: pokemon.height,
-                        };
+                // 1. Get the response body as text
 
-                        Ok(format!("{:?}", pokemon_object))
-                    }
-                    Err(err) => Err(format!("Error parsing JSON: {}", err)),
-                }
+                // 3. Parse the response body to JSON and values to struct
+
+                Ok(format!("Todo"))
+               
             } else {
                 Err(format!("Error: HTTP status code {}", response.status()))
             }

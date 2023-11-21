@@ -2,45 +2,50 @@ const { invoke } = window.__TAURI__.tauri;
 
 let pokemonNameInputEl;
 let pokemonMsgEl;
-
 let pokemonImgEl;
 let pokemonNameEl;
 let pokemonWeightEl;
 let pokemonHeightEl;
+let pokemonIdEl;
 
-async function greet() {
-  // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
+async function getPokemon() {
+  
   let pokemon = await invoke("get_pokemon", { name: pokemonNameInputEl.value });
 
-  // Remove "Pokemon {" and "}" from the string
+  // Parsing response
   let pokemonJson = '{'+pokemon.replace('Pokemon {', '').replace('}', '').replace('id', '"id"').replace('name', '"name"').replace('weight', '"weight"').replace('height', '"height"').trim()+'}';
 
-  // // Parse the remaining string as JSON
-  let pokemonObject = JSON.parse(pokemonJson);
+  // 3. Parse the remaining string as JSON
 
-  // // Access the properties of the parsed object
-  // console.log(pokemonObject.id);      // Output: 1
-  // console.log(pokemonObject.name);    // Output: bulbasaur
-  // console.log(pokemonObject.weight);  // Output: 69
-  // console.log(pokemonObject.height);  // Output: 7
+  // 4. Update the field's values 
+  
+  // 4.1. Update Message ("You've chosen Pikachu!")
+
+  // 4.2. Update Pokemon's Pokédex Number 
+
+  // 4.3. Update Pokemon's Name
+
+  // 4.4. Update Pokemon's Weight
+
+  // 4.5. Update Pokemon's Height
+
+  // 4.6. Update Pokemon's Image (for the image source use: https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/<pokemon_id>.png)
 
 
-  pokemonMsgEl.textContent = "You've chosen "+pokemonObject.name+"!";
-  pokemonImgEl.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+pokemonObject.id+".png"
-  pokemonNameEl.textContent = pokemonObject.name;
-  pokemonWeightEl.textContent = pokemonObject.weight;
-  pokemonHeightEl.textContent = pokemonObject.height;
 }
 
 window.addEventListener("DOMContentLoaded", () => {
+
   pokemonNameInputEl = document.querySelector("#pokemon-name-input");
   pokemonMsgEl = document.querySelector("#pokemon-msg");
   pokemonImgEl = document.querySelector("#pokemon-img");
   pokemonNameEl = document.querySelector("#pokemon-name");
   pokemonWeightEl = document.querySelector("#pokemon-weight");
   pokemonHeightEl = document.querySelector("#pokemon-height");
+  pokemonIdEl = document.querySelector("#pokemon-id");
+
   document.querySelector("#pokemon-form").addEventListener("submit", (e) => {
     e.preventDefault();
-    greet();
+    // 5. Add the function to the form's button
   });
 });
