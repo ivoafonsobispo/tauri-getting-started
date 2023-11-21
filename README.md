@@ -25,13 +25,12 @@ sudo apt install libwebkit2gtk-4.0-dev \
 npm install --save-dev @tauri-apps/cli
 ```
 
-
 2. **Rust**
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-    
+
 3. **NodeJS**
 
 ```bash
@@ -40,6 +39,7 @@ sudo apt-get install -y ca-certificates curl gnupg
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://deb.nodesource.com/gpgkey/nodesource-repo.gpg.key sudo gpg --dearmor -o /etc/apt/keyrings/nodesource.gpg
 ```
+
 ```bash
 NODE_MAJOR=20
 echo "deb [signed-by=/etc/apt/keyrings/nodesource.gpg] https://deb.nodesource.com/node_$NODE_MAJOR.x nodistro main" | sudo tee /etc/apt/sources.list.d/nodesource.list
@@ -67,7 +67,8 @@ npm run tauri dev
 
 ## Apprendix 🗄️
 
-[Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
+🧐 [Presentation](https://www.overleaf.com/read/fvbfxqjcpdzh#0ba971)
+🥳 [Solution](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-solution)
 
 ## Pretty ✨✨
 
