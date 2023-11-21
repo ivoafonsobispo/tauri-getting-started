@@ -7,6 +7,7 @@ let pokemonImgEl;
 let pokemonNameEl;
 let pokemonWeightEl;
 let pokemonHeightEl;
+let pokemonIdEl;
 
 async function greet() {
   // Learn more about Tauri commands at https://tauri.app/v1/guides/features/command
@@ -18,18 +19,13 @@ async function greet() {
   // // Parse the remaining string as JSON
   let pokemonObject = JSON.parse(pokemonJson);
 
-  // // Access the properties of the parsed object
-  // console.log(pokemonObject.id);      // Output: 1
-  // console.log(pokemonObject.name);    // Output: bulbasaur
-  // console.log(pokemonObject.weight);  // Output: 69
-  // console.log(pokemonObject.height);  // Output: 7
-
-
   pokemonMsgEl.textContent = "You've chosen "+pokemonObject.name+"!";
   pokemonImgEl.src = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/"+pokemonObject.id+".png"
   pokemonNameEl.textContent = pokemonObject.name;
   pokemonWeightEl.textContent = pokemonObject.weight;
   pokemonHeightEl.textContent = pokemonObject.height;
+  pokemonIdEl.textContent = pokemonObject.id;
+
 }
 
 window.addEventListener("DOMContentLoaded", () => {
@@ -39,6 +35,7 @@ window.addEventListener("DOMContentLoaded", () => {
   pokemonNameEl = document.querySelector("#pokemon-name");
   pokemonWeightEl = document.querySelector("#pokemon-weight");
   pokemonHeightEl = document.querySelector("#pokemon-height");
+  pokemonIdEl = document.querySelector("#pokemon-id");
   document.querySelector("#pokemon-form").addEventListener("submit", (e) => {
     e.preventDefault();
     greet();
