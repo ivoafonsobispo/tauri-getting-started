@@ -39,6 +39,18 @@ sudo apt-get install nodejs -y
 git clone https://github.com/ivoafonsobispo/tauri-getting-started.git
 ```
 
+2. **Install the pre-requisites**
+
+```bash
+sudo apt install cargo
+cargo install tauri-cli
+```
+
+3. **Run the project**
+
+```bash
+cargo tauri dev
+```
 
 ## Apprendix 🗄️
 
