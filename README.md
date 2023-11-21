@@ -67,12 +67,16 @@ npm run tauri dev
 
 3. **Try to solve the ordered steps in the base project**
 
-[😶‍🌫️ Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
+😶‍🌫️ [Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
 
 4. **Build Project**
 
 ```bash
 npm run tauri build
+```
+```bash
+cd src-tauri/target/release/
+./tauri-dex
 ```
 
 ## Appendix 🗄️
