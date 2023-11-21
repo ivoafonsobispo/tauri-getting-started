@@ -2,7 +2,7 @@
 #![cfg_attr(not(debug_assertions), windows_subsystem = "windows")]
 
 use reqwest;
-use serde::{Deserialize, Serialize};
+use serde::Deserialize;
 
 #[derive(Debug, Deserialize)]
 struct Pokemon {
@@ -48,7 +48,6 @@ async fn get_pokemon(name: &str) -> Result<String, String> {
         Err(err) => Err(format!("Error making HTTP request: {}", err)),
     }
 }
-
 
 fn main() {
     tauri::Builder::default()
