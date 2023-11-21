@@ -71,12 +71,29 @@ npm run tauri dev
 
 4. **Build Project**
 
+4.1 **Linux**
+
 ```bash
 npm run tauri build
 ```
+
 ```bash
 cd src-tauri/target/release/
 ./tauri-dex
+```
+
+4.2 **Windows**
+
+```bash
+sudo apt-get install mingw-w64
+```
+
+```bash
+rustup target add x86_64-pc-windows-gnu
+```
+
+```bash
+npm run tauri build -- --target x86_64-pc-windows-gnu
 ```
 
 ## Appendix 🗄️
