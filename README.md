@@ -69,7 +69,7 @@ npm run tauri dev
 
 [😶‍🌫️ Base Project](https://github.com/ivoafonsobispo/tauri-getting-started/tree/main/tauri-dex-base)
 
-4. **🥹 Build Project**
+4. **Build Project**
 
 ```bash
 npm run tauri build
