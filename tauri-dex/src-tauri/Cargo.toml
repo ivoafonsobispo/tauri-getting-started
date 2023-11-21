@@ -1,5 +1,5 @@
 [package]
-name = "tauri-tutorial-base"
+name = "tauri-dex"
 version = "0.0.0"
 description = "A Tauri App"
 authors = ["you"]
