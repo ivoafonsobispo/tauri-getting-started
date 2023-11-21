@@ -42,14 +42,14 @@ git clone https://github.com/ivoafonsobispo/tauri-getting-started.git
 2. **Install the pre-requisites**
 
 ```bash
-sudo apt install cargo
-cargo install tauri-cli
+npm install --save-dev @tauri-apps/cli
 ```
 
 3. **Run the project**
 
 ```bash
-cargo tauri dev
+npm install
+npm run tauri dev
 ```
 
 ## Apprendix 🗄️
