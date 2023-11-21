@@ -72,5 +72,5 @@ npm run tauri dev
 
 ## Logo so pretty ✨✨
 
-![Logo]([https://dev-to-uploads.s3.amazonaws.com/uploads/articles/th5xamgrr6se0x5ro4g6.png](https://tauri.app/img/social.png)https://tauri.app/img/social.png)
+![Logo](https://tauri.app/img/social.png)
 
