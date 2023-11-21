@@ -6,14 +6,34 @@ Getting started with **Tauri** 🦀🦀🦀🦀🦀🦀 hand's on 👐
 
 ## Installation Steps 🛠️
 
-1. **Rust**
+1. **Pre-requisites**
+
+```bash
+sudo apt update
+sudo apt install libwebkit2gtk-4.0-dev \
+    build-essential \
+    curl \
+    wget \
+    file \
+    libssl-dev \
+    libgtk-3-dev \
+    libayatana-appindicator3-dev \
+    librsvg2-dev
+```
+
+```bash
+npm install --save-dev @tauri-apps/cli
+```
+
+
+2. **Rust**
 
 ```bash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 - Select "1) Proceed with installation (default)" by typping 1
     
-2. **NodeJS**
+3. **NodeJS**
 
 ```bash
 sudo apt-get update
@@ -39,13 +59,7 @@ sudo apt-get install nodejs -y
 git clone https://github.com/ivoafonsobispo/tauri-getting-started.git
 ```
 
-2. **Install the pre-requisites**
-
-```bash
-npm install --save-dev @tauri-apps/cli
-```
-
-3. **Run the project**
+2. **Run the project**
 
 ```bash
 npm install
